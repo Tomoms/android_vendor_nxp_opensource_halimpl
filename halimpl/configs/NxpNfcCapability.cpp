@@ -103,6 +103,7 @@ tNFC_chipType capability::getChipType(uint8_t* msg, uint16_t msg_len) {
             chipType = pn81T;
         }
     }
+    chipType = pn65T;
     ALOGD ("%s NxpNci > Product : %s",__func__,product[chipType]);
     return chipType;
 }
