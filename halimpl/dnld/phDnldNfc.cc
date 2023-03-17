@@ -970,7 +970,7 @@ NFCSTATUS phDnldNfc_LoadFW(const char* pathName, uint8_t** pImgInfo,
       } else if(nfcFL.chipType == pn557) {
           pathName = "/vendor/lib/libpn557_fw.so";
       } else {
-          pathName = "/vendor/lib/libpn547_fw.so";
+          pathName = "/vendor/firmware/libpn547_fw.so";
       }
   }
 
@@ -1044,7 +1044,7 @@ NFCSTATUS phDnldNfc_LoadRecoveryFW(const char* pathName, uint8_t** pImgInfo,
       }else if(nfcFL.chipType == pn557) {
           pathName = "/vendor/lib/libpn557_fw.so";
       } else {
-          pathName = "/vendor/lib/libpn547_fw.so";
+          pathName = "/vendor/firmware/libpn547_fw.so";
       }
   }
   /* check if the handle is not NULL then free the library */
